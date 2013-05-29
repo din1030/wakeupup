@@ -1,3 +1,9 @@
 [submodule "wakeupup/JSONKit"]
-	path = wakeupup/wakeup/JSONKit
-	url = git://github.com/johnezang/JSONKit.git
+	path = wakeupup/JSONKit
+	url = https://github.com/johnezang/JSONKit
+[submodule "JSONKit"]
+	path = JSONKit
+	url = https://github.com/johnezang/JSONKit
+[submodule "wakeup/JSONKit"]
+	path = wakeup/JSONKit
+	url = https://github.com/johnezang/JSONKit
