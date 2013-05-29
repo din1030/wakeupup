@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface SettingViewController : UITableViewController
-
+@property (strong, nonatomic) IBOutlet UIButton *fbButton;
+@property (strong, nonatomic) IBOutlet UIButton *sendButton;
 @end
