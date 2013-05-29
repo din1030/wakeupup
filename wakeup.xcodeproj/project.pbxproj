@@ -17,6 +17,19 @@
 		A639E4FE1756378E005044EA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A639E4F61756376B005044EA /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A639E50117563FCB005044EA /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A639E50017563FCB005044EA /* SettingViewController.m */; };
 		A639E503175640B0005044EA /* f_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E502175640B0005044EA /* f_logo.png */; };
+		A639E51217566D29005044EA /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E50517566D29005044EA /* bg.png */; };
+		A639E51317566D29005044EA /* brainhole-06.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E50617566D29005044EA /* brainhole-06.png */; };
+		A639E51517566D29005044EA /* brainhole1.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E50817566D29005044EA /* brainhole1.png */; };
+		A639E51617566D29005044EA /* brainhole2.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E50917566D29005044EA /* brainhole2.png */; };
+		A639E51717566D29005044EA /* brainhole3.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E50A17566D29005044EA /* brainhole3.png */; };
+		A639E51817566D29005044EA /* brainhole4.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E50B17566D29005044EA /* brainhole4.png */; };
+		A639E51917566D29005044EA /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E50C17566D29005044EA /* eye.png */; };
+		A639E51A17566D29005044EA /* eyebk-09.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E50D17566D29005044EA /* eyebk-09.png */; };
+		A639E51B17566D29005044EA /* eyebrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E50E17566D29005044EA /* eyebrow.png */; };
+		A639E51C17566D29005044EA /* eyewh-05.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E50F17566D29005044EA /* eyewh-05.png */; };
+		A639E51D17566D29005044EA /* mouth.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E51017566D29005044EA /* mouth.png */; };
+		A639E51E17566D29005044EA /* nose.png in Resources */ = {isa = PBXBuildFile; fileRef = A639E51117566D29005044EA /* nose.png */; };
+		A639E52117566EEA005044EA /* BrainHoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A639E52017566EEA005044EA /* BrainHoleViewController.m */; };
 		A65238BD173A4DEA0030BDC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65238BC173A4DEA0030BDC7 /* UIKit.framework */; };
 		A65238BF173A4DEA0030BDC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65238BE173A4DEA0030BDC7 /* Foundation.framework */; };
 		A65238C1173A4DEA0030BDC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65238C0173A4DEA0030BDC7 /* CoreGraphics.framework */; };
@@ -72,6 +85,20 @@
 		A639E4FF17563FCB005044EA /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		A639E50017563FCB005044EA /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		A639E502175640B0005044EA /* f_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f_logo.png; sourceTree = "<group>"; };
+		A639E50517566D29005044EA /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		A639E50617566D29005044EA /* brainhole-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brainhole-06.png"; sourceTree = "<group>"; };
+		A639E50817566D29005044EA /* brainhole1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brainhole1.png; sourceTree = "<group>"; };
+		A639E50917566D29005044EA /* brainhole2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brainhole2.png; sourceTree = "<group>"; };
+		A639E50A17566D29005044EA /* brainhole3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brainhole3.png; sourceTree = "<group>"; };
+		A639E50B17566D29005044EA /* brainhole4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brainhole4.png; sourceTree = "<group>"; };
+		A639E50C17566D29005044EA /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
+		A639E50D17566D29005044EA /* eyebk-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eyebk-09.png"; sourceTree = "<group>"; };
+		A639E50E17566D29005044EA /* eyebrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyebrow.png; sourceTree = "<group>"; };
+		A639E50F17566D29005044EA /* eyewh-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eyewh-05.png"; sourceTree = "<group>"; };
+		A639E51017566D29005044EA /* mouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth.png; sourceTree = "<group>"; };
+		A639E51117566D29005044EA /* nose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nose.png; sourceTree = "<group>"; };
+		A639E51F17566EEA005044EA /* BrainHoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrainHoleViewController.h; sourceTree = "<group>"; };
+		A639E52017566EEA005044EA /* BrainHoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrainHoleViewController.m; sourceTree = "<group>"; };
 		A65238B9173A4DEA0030BDC7 /* 醒醒吧阿宅.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "醒醒吧阿宅.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65238BC173A4DEA0030BDC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A65238BE173A4DEA0030BDC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -178,6 +205,25 @@
 			name = Mission;
 			sourceTree = "<group>";
 		};
+		A639E50417566D29005044EA /* brain_hole */ = {
+			isa = PBXGroup;
+			children = (
+				A639E50517566D29005044EA /* bg.png */,
+				A639E50617566D29005044EA /* brainhole-06.png */,
+				A639E50817566D29005044EA /* brainhole1.png */,
+				A639E50917566D29005044EA /* brainhole2.png */,
+				A639E50A17566D29005044EA /* brainhole3.png */,
+				A639E50B17566D29005044EA /* brainhole4.png */,
+				A639E50C17566D29005044EA /* eye.png */,
+				A639E50D17566D29005044EA /* eyebk-09.png */,
+				A639E50E17566D29005044EA /* eyebrow.png */,
+				A639E50F17566D29005044EA /* eyewh-05.png */,
+				A639E51017566D29005044EA /* mouth.png */,
+				A639E51117566D29005044EA /* nose.png */,
+			);
+			path = brain_hole;
+			sourceTree = "<group>";
+		};
 		A65238B0173A4DEA0030BDC7 = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +282,8 @@
 				A639E50017563FCB005044EA /* SettingViewController.m */,
 				A65238D7173A4DEA0030BDC7 /* ViewController.h */,
 				A65238D8173A4DEA0030BDC7 /* ViewController.m */,
+				A639E51F17566EEA005044EA /* BrainHoleViewController.h */,
+				A639E52017566EEA005044EA /* BrainHoleViewController.m */,
 				A65238C3173A4DEA0030BDC7 /* Supporting Files */,
 			);
 			path = wakeup;
@@ -258,6 +306,7 @@
 		A6B2796117524ABA00895ACC /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				A639E50417566D29005044EA /* brain_hole */,
 				A639E502175640B0005044EA /* f_logo.png */,
 				A6C55D6117553814008F3314 /* alarm.png */,
 				A6B2796317524ABA00895ACC /* story_room */,
@@ -388,6 +437,18 @@
 				A639E4EE175636D7005044EA /* FacebookSDKResources.bundle in Resources */,
 				A639E4F2175636FF005044EA /* FBUserSettingsViewResources.bundle in Resources */,
 				A639E503175640B0005044EA /* f_logo.png in Resources */,
+				A639E51217566D29005044EA /* bg.png in Resources */,
+				A639E51317566D29005044EA /* brainhole-06.png in Resources */,
+				A639E51517566D29005044EA /* brainhole1.png in Resources */,
+				A639E51617566D29005044EA /* brainhole2.png in Resources */,
+				A639E51717566D29005044EA /* brainhole3.png in Resources */,
+				A639E51817566D29005044EA /* brainhole4.png in Resources */,
+				A639E51917566D29005044EA /* eye.png in Resources */,
+				A639E51A17566D29005044EA /* eyebk-09.png in Resources */,
+				A639E51B17566D29005044EA /* eyebrow.png in Resources */,
+				A639E51C17566D29005044EA /* eyewh-05.png in Resources */,
+				A639E51D17566D29005044EA /* mouth.png in Resources */,
+				A639E51E17566D29005044EA /* nose.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +470,7 @@
 				A679B2A2175497C800A01CB0 /* MissionCollectionCell.m in Sources */,
 				A6C55D5F175537E2008F3314 /* NewMissionViewController.m in Sources */,
 				A639E50117563FCB005044EA /* SettingViewController.m in Sources */,
+				A639E52117566EEA005044EA /* BrainHoleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
