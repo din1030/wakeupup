@@ -17,7 +17,13 @@
 @property (retain, nonatomic) IBOutlet UIButton *Hole3;
 @property (retain, nonatomic) IBOutlet UIButton *Hole4;
 
-//@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *hole;
+//@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *hole_lv1;
+//@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *hole_lv2;
+//@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *hole_lv3;
+//@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *hole_lv4;
+
+@property (retain, nonatomic)  NSArray *hole_img;
+
 
 -(IBAction)holeClick:(UIButton*)sender;
 

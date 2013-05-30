@@ -9,7 +9,6 @@
 #import "BrainHoleViewController.h"
 
 @interface BrainHoleViewController ()
-
 @end
 
 @implementation BrainHoleViewController
@@ -27,6 +26,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.hole_img = [NSArray arrayWithObjects:@"brainhole1.png",@"brainhole2.png",@"brainhole3.png",@"brainhole4.png",nil];
     timer = [NSTimer scheduledTimerWithTimeInterval:6
                                            target:self
                                          selector:@selector(generateHole)
@@ -50,15 +50,60 @@
 
 - (void) generateHole
 {
-    UIButton *newHole = [[UIButton alloc] initWithFrame:CGRectMake(100.0, 100.0, 30.0, 28.0)];
-                         [newHole setBackgroundImage:[UIImage imageNamed:@"brainhole2.png"] forState:UIControlStateNormal];
-    [newHole addTarget:self action:@selector(holeClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:newHole];
-    NSLog(@"new hole");
+    for (id obj in self.view.subviews)
+    {
+        if ([obj isKindOfClass:[UIButton class]])
+        { 
+            UIButton *oldHole = (UIButton*) obj;
+            //UIButton *newHole = [[UIButton alloc] initWithFrame:oldHole.frame];
+            switch (oldHole.tag) {  // 判斷下個 level 的圖
+                case 1:
+                    [oldHole setBackgroundImage:[UIImage imageNamed:@"brainhole2.png"] forState:UIControlStateNormal];
+                    //[newHole setBackgroundImage:[UIImage imageNamed:@"brainhole2.png"] forState:UIControlStateNormal];
+                    //newHole.tag = 2;
+                    oldHole.tag++;
+                    //[self.view addSubview:newHole];
+                    NSLog(@"new hole 2");
+                    break;
+                case 2:
+                    [oldHole setBackgroundImage:[UIImage imageNamed:@"brainhole3.png"] forState:UIControlStateNormal];
+                    //newHole.tag = 3;
+                    oldHole.tag++;
+                    //[self.view addSubview:newHole];
+                    NSLog(@"new hole 3");
+                    break;
+                case 3:
+                    [oldHole setBackgroundImage:[UIImage imageNamed:@"brainhole4.png"] forState:UIControlStateNormal];
+                    //newHole.tag = 4;
+                    oldHole.tag++;
+                    //[self.view addSubview:newHole];
+                    NSLog(@"new hole 4");
+                    break;
+                default:
+                    oldHole.hidden = NO;
+                    oldHole.tag++;
+                    break;
+            }
+            // 接 action ＆ 放回 view
+            //[oldHole addTarget:self action:@selector(holeClick:) forControlEvents:UIControlEventTouchUpInside];
+            //[self.view addSubview:newHole];
+        }
+    }
+
 }
 
 - (IBAction)holeClick:(UIButton*)sender
 {
-    sender.hidden = YES;
+    UIButton *thisHole = (UIButton*) sender;
+    //thisHole.tag--;
+    if (thisHole.tag == 1) {
+        thisHole.tag--;
+        thisHole.hidden = YES;
+    }
+    else {
+        thisHole.tag--;
+        NSLog(@"%d",thisHole.tag);
+        [thisHole setBackgroundImage:[UIImage imageNamed:[self.hole_img objectAtIndex:(thisHole.tag-1)]] forState:UIControlStateNormal];
+    }
 }
 @end

@@ -135,10 +135,10 @@
 
         //将page2设定成Storyboard Segue的目标UIViewController
         MIssionConditionViewController *conditionPage = segue.destinationViewController; // 這樣回前一頁也會送
-
+            
         //将值透过Storyboard Segue带给页面2的string变数
         [conditionPage setValue:cell1.cell_id forKey:@"m_id"];
-        NSLog(@"%@",cell1.cell_id);
+        //NSLog(@"%@",[cell1 ind);
         }
     }
 }
