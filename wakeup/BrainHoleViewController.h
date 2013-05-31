@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#define kHOLES 12
 
 @interface BrainHoleViewController : UIViewController
 {
-    NSTimer *timer;
+    NSTimer *check_timer;
+    NSTimer *levelup_timer;
+    NSUInteger remain_hole;
 }
 @property (retain, nonatomic) IBOutlet UIButton *Hole1;
 @property (retain, nonatomic) IBOutlet UIButton *Hole2;

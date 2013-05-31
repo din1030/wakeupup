@@ -10,6 +10,7 @@
 #import <FacebookSDK/FacebookSDK.h>
 
 @interface SettingViewController : UITableViewController
+@property (retain, nonatomic) IBOutlet UILabel *timeZone;
 @property (strong, nonatomic) IBOutlet UIButton *fbButton;
 @property (strong, nonatomic) IBOutlet UIButton *sendButton;
 @end

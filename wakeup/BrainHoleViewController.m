@@ -26,8 +26,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    remain_hole = kHOLES;
     self.hole_img = [NSArray arrayWithObjects:@"brainhole1.png",@"brainhole2.png",@"brainhole3.png",@"brainhole4.png",nil];
-    timer = [NSTimer scheduledTimerWithTimeInterval:6
+//    check_timer = [NSTimer scheduledTimerWithTimeInterval:6
+//                                                   target:self
+//                                                 selector:@selector(generateHole)
+//                                                 userInfo:nil
+//                                                  repeats:YES];
+    levelup_timer = [NSTimer scheduledTimerWithTimeInterval:9
                                            target:self
                                          selector:@selector(generateHole)
                                          userInfo:nil
@@ -79,9 +85,10 @@
                     //[self.view addSubview:newHole];
                     NSLog(@"new hole 4");
                     break;
-                default:
+                case 0:
                     oldHole.hidden = NO;
                     oldHole.tag++;
+                    remain_hole++;
                     break;
             }
             // 接 action ＆ 放回 view
@@ -99,11 +106,41 @@
     if (thisHole.tag == 1) {
         thisHole.tag--;
         thisHole.hidden = YES;
+        remain_hole--;
+        if (remain_hole == 0) {
+            NSLog(@"SUCCES!!!");
+            [levelup_timer invalidate];
+            [self showAlert];
+        }
     }
     else {
         thisHole.tag--;
         NSLog(@"%d",thisHole.tag);
         [thisHole setBackgroundImage:[UIImage imageNamed:[self.hole_img objectAtIndex:(thisHole.tag-1)]] forState:UIControlStateNormal];
     }
+    //[levelup_timer invalidate];
 }
+
+-(void) showAlert
+{
+    [[[[UIAlertView alloc]
+       initWithTitle:@"恭喜！"
+       message:@"成功填補所有腦洞啦～～"
+       delegate:self
+       cancelButtonTitle:@"OK"
+       otherButtonTitles: nil] autorelease] show];
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    //將按鈕的Title當作判斷的依據
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
+    
+    if([title isEqualToString:@"OK"]) {
+        NSLog(@"after click OK button");
+    }
+
+}
+
 @end

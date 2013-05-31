@@ -23,6 +23,7 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+
     }
     return self;
 }
@@ -36,6 +37,13 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    NSTimeZone *currentTimeZone = [NSTimeZone localTimeZone];
+    NSLog(@"%@",currentTimeZone.description); // Local Time Zone (Asia/Taipei (GMT+08:00) offset 28800)
+    NSLog(@"%@",currentTimeZone.abbreviation); // GMT+08:00
+    self.timeZone.text = currentTimeZone.abbreviation;
+    //NSInteger offset = [currentTimeZone secondsFromGMT];
+    //[NSDate dateWithTimeIntervalSince1970:1301322715];
 }
 
 - (void)didReceiveMemoryWarning
@@ -123,6 +131,7 @@
 
 - (void)dealloc {
     [_fbButton release];
+    [_timeZone release];
     [super dealloc];
 }
 
@@ -150,7 +159,7 @@
     // we defer request for permission to post to the moment of post, then we check for the permission
     if ([FBSession.activeSession.permissions indexOfObject:@"publish_actions"] == NSNotFound) {
         // if we don't already have the permission, then we request it now
-        [FBSession.activeSession reauthorizeWithPublishPermissions:[NSArray arrayWithObject:@"publish_actions"]
+        [FBSession.activeSession requestNewPublishPermissions:[NSArray arrayWithObject:@"publish_actions"]
                                                    defaultAudience:FBSessionDefaultAudienceFriends
                                                  completionHandler:^(FBSession *session, NSError *error) {
                                                      if (!error) {

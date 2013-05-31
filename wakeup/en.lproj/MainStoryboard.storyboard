@@ -136,6 +136,22 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="GMT+00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fkZ-3F-ipd">
+                                                    <rect key="frame" x="118" y="4" width="165" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="所在時區：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bbx-Nt-8oU">
+                                                    <rect key="frame" x="20" y="8" width="90" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
@@ -192,6 +208,7 @@
                     <connections>
                         <outlet property="fbButton" destination="rrv-OI-AMu" id="SdN-E8-zpZ"/>
                         <outlet property="sendButton" destination="t5c-xi-TAk" id="tfU-Z6-c9h"/>
+                        <outlet property="timeZone" destination="fkZ-3F-ipd" id="mTb-WM-gV5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WhT-Fd-nx6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -401,14 +418,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="Hole2" destination="qdJ-DU-2Rd" id="clN-Rg-uux"/>
-                        <outlet property="Hole3" destination="FOQ-hc-U03" id="V4d-8M-24l"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="399-E1-fkt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15" y="-518"/>
+            <point key="canvasLocation" x="-31" y="-608"/>
         </scene>
         <!--View Controller - 鬧鐘-->
         <scene sceneID="6O3-9D-yR9">
@@ -752,6 +765,7 @@
                 <relationship kind="action" name="sendClick:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="fbButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="sendButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="timeZone" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="UICollectionReusableView" superclassName="UIView">
