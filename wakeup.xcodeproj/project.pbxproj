@@ -71,6 +71,8 @@
 		A6B2798717526CDE00895ACC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6B2798417526CDE00895ACC /* README.md */; };
 		A6C55D5F175537E2008F3314 /* NewMissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C55D5C175537E2008F3314 /* NewMissionViewController.m */; };
 		A6C55D6217553814008F3314 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C55D6117553814008F3314 /* alarm.png */; };
+		A6DBC912175A166000393671 /* eye-r.png in Resources */ = {isa = PBXBuildFile; fileRef = A6DBC910175A166000393671 /* eye-r.png */; };
+		A6DBC913175A166000393671 /* eyewh-r.png in Resources */ = {isa = PBXBuildFile; fileRef = A6DBC911175A166000393671 /* eyewh-r.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -152,6 +154,8 @@
 		A6C55D5B175537E2008F3314 /* NewMissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMissionViewController.h; sourceTree = "<group>"; };
 		A6C55D5C175537E2008F3314 /* NewMissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMissionViewController.m; sourceTree = "<group>"; };
 		A6C55D6117553814008F3314 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
+		A6DBC910175A166000393671 /* eye-r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-r.png"; sourceTree = "<group>"; };
+		A6DBC911175A166000393671 /* eyewh-r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eyewh-r.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,8 @@
 		A639E50417566D29005044EA /* brain_hole */ = {
 			isa = PBXGroup;
 			children = (
+				A6DBC910175A166000393671 /* eye-r.png */,
+				A6DBC911175A166000393671 /* eyewh-r.png */,
 				A639E50517566D29005044EA /* bg.png */,
 				A639E50617566D29005044EA /* brainhole-06.png */,
 				A639E50817566D29005044EA /* brainhole1.png */,
@@ -449,6 +455,8 @@
 				A639E51C17566D29005044EA /* eyewh-05.png in Resources */,
 				A639E51D17566D29005044EA /* mouth.png in Resources */,
 				A639E51E17566D29005044EA /* nose.png in Resources */,
+				A6DBC912175A166000393671 /* eye-r.png in Resources */,
+				A6DBC913175A166000393671 /* eyewh-r.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

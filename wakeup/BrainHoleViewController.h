@@ -15,16 +15,8 @@
     NSTimer *levelup_timer;
     NSUInteger remain_hole;
 }
-@property (retain, nonatomic) IBOutlet UIButton *Hole1;
-@property (retain, nonatomic) IBOutlet UIButton *Hole2;
-@property (retain, nonatomic) IBOutlet UIButton *Hole3;
-@property (retain, nonatomic) IBOutlet UIButton *Hole4;
 
-//@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *hole_lv1;
-//@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *hole_lv2;
-//@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *hole_lv3;
-//@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *hole_lv4;
-
+@property (retain, nonatomic) IBOutlet UIImageView *eye;
 @property (retain, nonatomic)  NSArray *hole_img;
 
 

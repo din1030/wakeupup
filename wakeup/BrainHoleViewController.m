@@ -7,6 +7,7 @@
 //
 
 #import "BrainHoleViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface BrainHoleViewController ()
 @end
@@ -28,12 +29,9 @@
 	// Do any additional setup after loading the view.
     remain_hole = kHOLES;
     self.hole_img = [NSArray arrayWithObjects:@"brainhole1.png",@"brainhole2.png",@"brainhole3.png",@"brainhole4.png",nil];
-//    check_timer = [NSTimer scheduledTimerWithTimeInterval:6
-//                                                   target:self
-//                                                 selector:@selector(generateHole)
-//                                                 userInfo:nil
-//                                                  repeats:YES];
-    levelup_timer = [NSTimer scheduledTimerWithTimeInterval:9
+    
+    [_eye.layer setAnchorPoint: CGPointMake(0.5,0.5)];
+    levelup_timer = [NSTimer scheduledTimerWithTimeInterval:9  // 洞升級秒數
                                            target:self
                                          selector:@selector(generateHole)
                                          userInfo:nil
@@ -47,11 +45,8 @@
 }
 
 - (void)dealloc {
+    [_eye release];
     [super dealloc];
-    [_Hole1 dealloc];
-    [_Hole2 dealloc];
-    [_Hole3 dealloc];
-    [_Hole4 dealloc];
 }
 
 - (void) generateHole
@@ -61,28 +56,22 @@
         if ([obj isKindOfClass:[UIButton class]])
         { 
             UIButton *oldHole = (UIButton*) obj;
-            //UIButton *newHole = [[UIButton alloc] initWithFrame:oldHole.frame];
+
+            
             switch (oldHole.tag) {  // 判斷下個 level 的圖
                 case 1:
                     [oldHole setBackgroundImage:[UIImage imageNamed:@"brainhole2.png"] forState:UIControlStateNormal];
-                    //[newHole setBackgroundImage:[UIImage imageNamed:@"brainhole2.png"] forState:UIControlStateNormal];
-                    //newHole.tag = 2;
                     oldHole.tag++;
-                    //[self.view addSubview:newHole];
                     NSLog(@"new hole 2");
                     break;
                 case 2:
                     [oldHole setBackgroundImage:[UIImage imageNamed:@"brainhole3.png"] forState:UIControlStateNormal];
-                    //newHole.tag = 3;
                     oldHole.tag++;
-                    //[self.view addSubview:newHole];
                     NSLog(@"new hole 3");
                     break;
                 case 3:
                     [oldHole setBackgroundImage:[UIImage imageNamed:@"brainhole4.png"] forState:UIControlStateNormal];
-                    //newHole.tag = 4;
                     oldHole.tag++;
-                    //[self.view addSubview:newHole];
                     NSLog(@"new hole 4");
                     break;
                 case 0:
@@ -132,6 +121,7 @@
     
 }
 
+// 按了 alert 的 按鈕之後的動作（發佈到fb、轉回首頁。
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     //將按鈕的Title當作判斷的依據
@@ -139,6 +129,7 @@
     
     if([title isEqualToString:@"OK"]) {
         NSLog(@"after click OK button");
+        [self performSegueWithIdentifier:@"backHome" sender:self];
     }
 
 }

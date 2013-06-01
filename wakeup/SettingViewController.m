@@ -23,7 +23,7 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-
+        
     }
     return self;
 }
@@ -31,10 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
- 
+    
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
@@ -67,53 +67,53 @@
 }
 
 /* - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-} */
+ {
+ static NSString *CellIdentifier = @"Cell";
+ UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+ 
+ // Configure the cell...
+ 
+ return cell;
+ } */
 
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+ // Override to support conditional editing of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the specified item to be editable.
+ return YES;
+ }
+ */
 
 /*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+ // Override to support editing the table view.
+ - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ if (editingStyle == UITableViewCellEditingStyleDelete) {
+ // Delete the row from the data source
+ [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+ }
+ else if (editingStyle == UITableViewCellEditingStyleInsert) {
+ // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+ }
+ }
+ */
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+ {
+ }
+ */
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
 #pragma mark - Table view delegate
 
@@ -160,13 +160,12 @@
     if ([FBSession.activeSession.permissions indexOfObject:@"publish_actions"] == NSNotFound) {
         // if we don't already have the permission, then we request it now
         [FBSession.activeSession requestNewPublishPermissions:[NSArray arrayWithObject:@"publish_actions"]
-                                                   defaultAudience:FBSessionDefaultAudienceFriends
-                                                 completionHandler:^(FBSession *session, NSError *error) {
-                                                     if (!error) {
-                                                         action();
-                                                     }
-                                                     //For this example, ignore errors (such as if user cancels).
-                                                 }];
+                                              defaultAudience:FBSessionDefaultAudienceFriends
+                                            completionHandler:^(FBSession *session, NSError *error) {
+                                                if (!error) {
+                                                    action();
+                                                } //For this example, ignore errors (such as if user cancels).
+                                            }];
     } else {
         action();
     }
@@ -189,8 +188,9 @@
     //                                                                        handler:nil];
     if (FBSession.activeSession.isOpen) { //name!=nil , FBSession.activeSession.isOpen
         NSMutableDictionary* params = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
-                                       [NSString stringWithFormat:@"骨子裡其實是個%@", //name,
-                                        @"法國人"],@"message",@"法國人",@"name", @" " ,@"caption",
+                                       [NSString stringWithFormat:@"骨子裡其實是個%@",@"法國人"],@"message",
+                                       @"法國人",@"name",
+                                       @" " ,@"caption",
                                        @"Hi～～～",@"description",
                                        @"https://www.parse.com/docs/cloud_code_guide", @"link",
                                        @"http://big5.gmw.cn/images/2009-07/30/xin_1207063003540622341025.jpg", @"picture",
@@ -211,16 +211,14 @@
     }
     else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"哇嗚～"
-                              //上面是標題的設定
                                                         message:@"要先登入才能分享唷！"  //警告訊息內文的設定
                                                        delegate:self // 叫出AlertView之後，要給該ViewController去處理
-                              
                                               cancelButtonTitle:@"OK"  //cancel按鈕文字的設定
-                                              otherButtonTitles: nil]; // 其他按鈕的設定
+                                              otherButtonTitles:nil]; // 其他按鈕的設定
         // 如果要多個其他按鈕 >> otherButtonTitles: @"check1", @"check2", nil];
         
         [alert show];  // 把alert這個物件秀出來
-        //        [alert release]; //釋放alert這個物件
+        [alert release]; //釋放alert這個物件
     }
 }
 
