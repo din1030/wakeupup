@@ -94,7 +94,7 @@
     //NSString *description = [obj_ar[row] objectForKey:@"description"];
     
     NSLog(@"%@",name);
-    //cell.mission_button.titleLabel.text = name;
+    cell.mission_button.titleLabel.text = name;
     cell.cell_id = [[self.obj_ar objectAtIndex:ar_index] objectId];
     NSLog(@"%@",cell.cell_id);
     return cell;

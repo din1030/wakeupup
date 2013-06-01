@@ -71,6 +71,8 @@
 		A6B2798717526CDE00895ACC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6B2798417526CDE00895ACC /* README.md */; };
 		A6C55D5F175537E2008F3314 /* NewMissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C55D5C175537E2008F3314 /* NewMissionViewController.m */; };
 		A6C55D6217553814008F3314 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C55D6117553814008F3314 /* alarm.png */; };
+		A6CBB9C0175A5515007CD419 /* BadgeCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CBB9BF175A5515007CD419 /* BadgeCollectionLayout.m */; };
+		A6CBB9C3175A7D5E007CD419 /* CustomViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CBB9C2175A7D5E007CD419 /* CustomViewLayout.m */; };
 		A6DBC912175A166000393671 /* eye-r.png in Resources */ = {isa = PBXBuildFile; fileRef = A6DBC910175A166000393671 /* eye-r.png */; };
 		A6DBC913175A166000393671 /* eyewh-r.png in Resources */ = {isa = PBXBuildFile; fileRef = A6DBC911175A166000393671 /* eyewh-r.png */; };
 /* End PBXBuildFile section */
@@ -154,6 +156,10 @@
 		A6C55D5B175537E2008F3314 /* NewMissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMissionViewController.h; sourceTree = "<group>"; };
 		A6C55D5C175537E2008F3314 /* NewMissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMissionViewController.m; sourceTree = "<group>"; };
 		A6C55D6117553814008F3314 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
+		A6CBB9BE175A5515007CD419 /* BadgeCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeCollectionLayout.h; sourceTree = "<group>"; };
+		A6CBB9BF175A5515007CD419 /* BadgeCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeCollectionLayout.m; sourceTree = "<group>"; };
+		A6CBB9C1175A7D5E007CD419 /* CustomViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewLayout.h; sourceTree = "<group>"; };
+		A6CBB9C2175A7D5E007CD419 /* CustomViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewLayout.m; sourceTree = "<group>"; };
 		A6DBC910175A166000393671 /* eye-r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-r.png"; sourceTree = "<group>"; };
 		A6DBC911175A166000393671 /* eyewh-r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eyewh-r.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -279,11 +285,13 @@
 			isa = PBXGroup;
 			children = (
 				A639E4E917560C4E005044EA /* Mission */,
-				A6B2798017526CDE00895ACC /* JSONKit */,
-				A6B2797F17526B7900895ACC /* statistics */,
+				A6CBB9C4175A832F007CD419 /* Badge */,
+				A6B2797F17526B7900895ACC /* Statistics */,
 				A65238CB173A4DEA0030BDC7 /* AppDelegate.h */,
 				A65238CC173A4DEA0030BDC7 /* AppDelegate.m */,
 				A65238D4173A4DEA0030BDC7 /* MainStoryboard.storyboard */,
+				A6CBB9BE175A5515007CD419 /* BadgeCollectionLayout.h */,
+				A6CBB9BF175A5515007CD419 /* BadgeCollectionLayout.m */,
 				A639E4FF17563FCB005044EA /* SettingViewController.h */,
 				A639E50017563FCB005044EA /* SettingViewController.m */,
 				A65238D7173A4DEA0030BDC7 /* ViewController.h */,
@@ -298,6 +306,7 @@
 		A65238C3173A4DEA0030BDC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A6B2798017526CDE00895ACC /* JSONKit */,
 				A65238C4173A4DEA0030BDC7 /* wakeup-Info.plist */,
 				A65238C5173A4DEA0030BDC7 /* InfoPlist.strings */,
 				A65238C8173A4DEA0030BDC7 /* main.m */,
@@ -346,7 +355,7 @@
 			path = "story_set alarm";
 			sourceTree = "<group>";
 		};
-		A6B2797F17526B7900895ACC /* statistics */ = {
+		A6B2797F17526B7900895ACC /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
 				A679B28A1753987900A01CB0 /* PCLineChartView.h */,
@@ -356,7 +365,7 @@
 				A679B29117539BA700A01CB0 /* RecordViewController123.h */,
 				A679B29217539BA700A01CB0 /* RecordViewController123.m */,
 			);
-			name = statistics;
+			name = Statistics;
 			sourceTree = "<group>";
 		};
 		A6B2798017526CDE00895ACC /* JSONKit */ = {
@@ -368,6 +377,15 @@
 				A6B2798417526CDE00895ACC /* README.md */,
 			);
 			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		A6CBB9C4175A832F007CD419 /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				A6CBB9C1175A7D5E007CD419 /* CustomViewLayout.h */,
+				A6CBB9C2175A7D5E007CD419 /* CustomViewLayout.m */,
+			);
+			name = Badge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,6 +497,8 @@
 				A6C55D5F175537E2008F3314 /* NewMissionViewController.m in Sources */,
 				A639E50117563FCB005044EA /* SettingViewController.m in Sources */,
 				A639E52117566EEA005044EA /* BrainHoleViewController.m in Sources */,
+				A6CBB9C0175A5515007CD419 /* BadgeCollectionLayout.m in Sources */,
+				A6CBB9C3175A7D5E007CD419 /* CustomViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
