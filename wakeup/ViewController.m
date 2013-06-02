@@ -26,6 +26,8 @@
     NSLog(@"name:%@",name);
     
     [testObject save];
+    
+    NSLog(@"%f,%f",self.view.frame.size.width,self.view.frame.size.height);
 }
 
 - (void)didReceiveMemoryWarning
