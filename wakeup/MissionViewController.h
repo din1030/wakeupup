@@ -1,5 +1,5 @@
 //
-//  NewMissionViewController.h
+//  MissionViewController.h
 //  wakeup
 //
 //  Created by din1030 on 13/5/28.
@@ -9,6 +9,6 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-@interface NewMissionViewController : UICollectionViewController
+@interface MissionViewController : UICollectionViewController
 @property (nonatomic, strong) NSArray *obj_ar;
 @end

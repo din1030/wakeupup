@@ -1,20 +1,20 @@
 //
-//  NewMissionViewController.m
+//  MissionViewController.m
 //  wakeup
 //
 //  Created by din1030 on 13/5/28.
 //  Copyright (c) 2013年 din1030. All rights reserved.
 //
 
-#import "NewMissionViewController.h"
+#import "MissionViewController.h"
 #import "MIssionConditionViewController.h"
 #import "MissionCollectionCell.h"
 
-@interface NewMissionViewController ()
+@interface MissionViewController ()
 
 @end
 
-@implementation NewMissionViewController
+@implementation MissionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +28,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // 設定 nav bar
+    UINavigationBar *navBar = [self.navigationController navigationBar];
+    [navBar setBackgroundImage:[UIImage imageNamed:@"brainhole1.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    // 設定透明
+    //navBar.translucent = YES; 
+    
 	// Do any additional setup after loading the view.
     // 開始撈有哪些 mission
     PFQuery *qq = [PFQuery queryWithClassName:@"MISSION"];
