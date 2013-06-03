@@ -517,19 +517,14 @@
             </objects>
             <point key="canvasLocation" x="1061" y="-280"/>
         </scene>
-        <!--Collection View Controller - BADGE-->
+        <!--Badge View Controller - BADGE-->
         <scene sceneID="QN4-o0-75S">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="HTb-k3-vNr" sceneMemberID="viewController">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="HTb-k3-vNr" customClass="BadgeViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Aaq-OO-MRC">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fq2-fg-pzR">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
+                        <collectionViewLayout key="collectionViewLayout" id="coh-j2-Kfx" customClass="CustomViewLayout"/>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rqL-xg-etb">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -724,6 +719,9 @@
         <image name="room_setting.png" width="73" height="76"/>
     </resources>
     <classes>
+        <class className="BadgeViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BadgeViewController.h"/>
+        </class>
         <class className="BrainHoleViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BrainHoleViewController.h"/>
             <relationships>
@@ -776,9 +774,6 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>

@@ -46,6 +46,8 @@
 		A679B2971753AA4100A01CB0 /* RecordViewController123.m in Sources */ = {isa = PBXBuildFile; fileRef = A679B29217539BA700A01CB0 /* RecordViewController123.m */; };
 		A679B29F175486FA00A01CB0 /* MIssionConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A679B29E175486FA00A01CB0 /* MIssionConditionViewController.m */; };
 		A679B2A2175497C800A01CB0 /* MissionCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A679B2A1175497C800A01CB0 /* MissionCollectionCell.m */; };
+		A680C8A5175C695B001EDDBD /* BadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A680C8A4175C695B001EDDBD /* BadgeViewController.m */; };
+		A680C8A8175C6A1C001EDDBD /* BadgeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A680C8A7175C6A1C001EDDBD /* BadgeListViewController.m */; };
 		A69BC2F6174BA087006AE7FE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69BC2F5174BA087006AE7FE /* Parse.framework */; };
 		A69BC309174BA1A3006AE7FE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69BC2F7174BA135006AE7FE /* AudioToolbox.framework */; };
 		A69BC30A174BA1A3006AE7FE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69BC2F8174BA135006AE7FE /* CFNetwork.framework */; };
@@ -82,7 +84,6 @@
 		A6B2798617526CDE00895ACC /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B2798317526CDE00895ACC /* JSONKit.m */; };
 		A6B2798717526CDE00895ACC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6B2798417526CDE00895ACC /* README.md */; };
 		A6C55D5F175537E2008F3314 /* MissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C55D5C175537E2008F3314 /* MissionViewController.m */; };
-		A6CBB9C0175A5515007CD419 /* BadgeCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CBB9BF175A5515007CD419 /* BadgeCollectionLayout.m */; };
 		A6CBB9C3175A7D5E007CD419 /* CustomViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CBB9C2175A7D5E007CD419 /* CustomViewLayout.m */; };
 		A6DBC912175A166000393671 /* eye-r.png in Resources */ = {isa = PBXBuildFile; fileRef = A6DBC910175A166000393671 /* eye-r.png */; };
 		A6DBC913175A166000393671 /* eyewh-r.png in Resources */ = {isa = PBXBuildFile; fileRef = A6DBC911175A166000393671 /* eyewh-r.png */; };
@@ -140,6 +141,10 @@
 		A679B29E175486FA00A01CB0 /* MIssionConditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIssionConditionViewController.m; sourceTree = "<group>"; };
 		A679B2A0175497C800A01CB0 /* MissionCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionCollectionCell.h; sourceTree = "<group>"; };
 		A679B2A1175497C800A01CB0 /* MissionCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionCollectionCell.m; sourceTree = "<group>"; };
+		A680C8A3175C695B001EDDBD /* BadgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeViewController.h; sourceTree = "<group>"; };
+		A680C8A4175C695B001EDDBD /* BadgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeViewController.m; sourceTree = "<group>"; };
+		A680C8A6175C6A1C001EDDBD /* BadgeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeListViewController.h; sourceTree = "<group>"; };
+		A680C8A7175C6A1C001EDDBD /* BadgeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeListViewController.m; sourceTree = "<group>"; };
 		A69BC2F5174BA087006AE7FE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		A69BC2F7174BA135006AE7FE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A69BC2F8174BA135006AE7FE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -178,8 +183,6 @@
 		A6B2798417526CDE00895ACC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		A6C55D5B175537E2008F3314 /* MissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionViewController.h; sourceTree = "<group>"; };
 		A6C55D5C175537E2008F3314 /* MissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionViewController.m; sourceTree = "<group>"; };
-		A6CBB9BE175A5515007CD419 /* BadgeCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeCollectionLayout.h; sourceTree = "<group>"; };
-		A6CBB9BF175A5515007CD419 /* BadgeCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeCollectionLayout.m; sourceTree = "<group>"; };
 		A6CBB9C1175A7D5E007CD419 /* CustomViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewLayout.h; sourceTree = "<group>"; };
 		A6CBB9C2175A7D5E007CD419 /* CustomViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewLayout.m; sourceTree = "<group>"; };
 		A6DBC910175A166000393671 /* eye-r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-r.png"; sourceTree = "<group>"; };
@@ -313,8 +316,6 @@
 				A65238CB173A4DEA0030BDC7 /* AppDelegate.h */,
 				A65238CC173A4DEA0030BDC7 /* AppDelegate.m */,
 				A65238D4173A4DEA0030BDC7 /* MainStoryboard.storyboard */,
-				A6CBB9BE175A5515007CD419 /* BadgeCollectionLayout.h */,
-				A6CBB9BF175A5515007CD419 /* BadgeCollectionLayout.m */,
 				A639E4FF17563FCB005044EA /* SettingViewController.h */,
 				A639E50017563FCB005044EA /* SettingViewController.m */,
 				A65238D7173A4DEA0030BDC7 /* ViewController.h */,
@@ -416,6 +417,10 @@
 		A6CBB9C4175A832F007CD419 /* Badge */ = {
 			isa = PBXGroup;
 			children = (
+				A680C8A3175C695B001EDDBD /* BadgeViewController.h */,
+				A680C8A4175C695B001EDDBD /* BadgeViewController.m */,
+				A680C8A6175C6A1C001EDDBD /* BadgeListViewController.h */,
+				A680C8A7175C6A1C001EDDBD /* BadgeListViewController.m */,
 				A6CBB9C1175A7D5E007CD419 /* CustomViewLayout.h */,
 				A6CBB9C2175A7D5E007CD419 /* CustomViewLayout.m */,
 			);
@@ -542,8 +547,9 @@
 				A6C55D5F175537E2008F3314 /* MissionViewController.m in Sources */,
 				A639E50117563FCB005044EA /* SettingViewController.m in Sources */,
 				A639E52117566EEA005044EA /* BrainHoleViewController.m in Sources */,
-				A6CBB9C0175A5515007CD419 /* BadgeCollectionLayout.m in Sources */,
 				A6CBB9C3175A7D5E007CD419 /* CustomViewLayout.m in Sources */,
+				A680C8A5175C695B001EDDBD /* BadgeViewController.m in Sources */,
+				A680C8A8175C6A1C001EDDBD /* BadgeListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
