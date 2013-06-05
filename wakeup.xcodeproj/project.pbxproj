@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B564E36175F165400A1E91B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B564E34175F165400A1E91B /* MainStoryboard.storyboard */; };
 		8BB4B7B5175E62E60037CBB8 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB4B7B4175E62E60037CBB8 /* AlarmViewController.m */; };
 		8BB4B7B7175E765B0037CBB8 /* set_alarm_bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB4B7B6175E765B0037CBB8 /* set_alarm_bg1.png */; };
 		A639E4E817560C2D005044EA /* sample_linechart_data.json in Resources */ = {isa = PBXBuildFile; fileRef = A639E4E717560C2D005044EA /* sample_linechart_data.json */; };
@@ -91,7 +90,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8B564E35175F165400A1E91B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = wakeup/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8BB4B7B3175E62E60037CBB8 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
 		8BB4B7B4175E62E60037CBB8 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
 		8BB4B7B6175E765B0037CBB8 /* set_alarm_bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = set_alarm_bg1.png; sourceTree = "<group>"; };
@@ -320,7 +318,6 @@
 				A65238CC173A4DEA0030BDC7 /* AppDelegate.m */,
 				A639E4FF17563FCB005044EA /* SettingViewController.h */,
 				A639E50017563FCB005044EA /* SettingViewController.m */,
-				8B564E34175F165400A1E91B /* MainStoryboard.storyboard */,
 				A65238D7173A4DEA0030BDC7 /* ViewController.h */,
 				A65238D8173A4DEA0030BDC7 /* ViewController.m */,
 				A639E51F17566EEA005044EA /* BrainHoleViewController.h */,
@@ -529,7 +526,6 @@
 				A6AAFEFA175B5DCC00B07CD7 /* set_alarm_set.png in Resources */,
 				A6AAFEFB175B5DCC00B07CD7 /* set_alarm_start.png in Resources */,
 				8BB4B7B7175E765B0037CBB8 /* set_alarm_bg1.png in Resources */,
-				8B564E36175F165400A1E91B /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,15 +558,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8B564E34175F165400A1E91B /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B564E35175F165400A1E91B /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		A65238C5173A4DEA0030BDC7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
