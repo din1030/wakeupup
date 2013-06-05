@@ -24,7 +24,7 @@
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="room_bg.png" id="bmO-U5-NUT">
@@ -124,7 +124,7 @@
             <objects>
                 <tableViewController id="W2a-7g-k3S" customClass="SettingViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jVA-6V-Upn">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -443,33 +443,111 @@
             </objects>
             <point key="canvasLocation" x="-15" y="-608"/>
         </scene>
-        <!--View Controller - 鬧鐘-->
+        <!--Alarm View Controller-->
         <scene sceneID="6O3-9D-yR9">
             <objects>
-                <viewController id="vgm-0b-nQn" sceneMemberID="viewController">
+                <viewController id="vgm-0b-nQn" customClass="AlarmViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YiT-MA-5yO">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="room_alarm.png" id="sTy-kS-esP">
-                                <rect key="frame" x="20" y="29" width="280" height="242"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="set_alarm_bg1.png" id="yY9-5f-Sud">
+                                <rect key="frame" x="-5" y="0.0" width="331" height="370"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="alarm_hole-02.png" id="sTy-kS-esP">
+                                <rect key="frame" x="34" y="20" width="252" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="set_alarm_set.png" id="PQW-SR-bdP">
+                                <rect key="frame" x="138" y="248" width="43" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="S7P-WY-uUK" appends="YES" id="vcm-8R-RRZ"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="set_alarm_min.png" id="eNg-q6-McL">
+                                <rect key="frame" x="152" y="155" width="15" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="set_alarm_hr.png" id="w1v-80-JgS">
+                                <rect key="frame" x="153" y="155" width="14" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="set_alarm_alarm.png" id="dOx-qU-AHr">
+                                <rect key="frame" x="155" y="155" width="9" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="set_alarm_sec.png" id="ETd-fp-Rvj">
+                                <rect key="frame" x="150" y="155" width="20" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Odp-iT-RC7">
+                                <rect key="frame" x="42" y="43" width="237" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WMy-Ai-52V">
+                                <rect key="frame" x="84" y="339" width="151" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K6p-Aa-Ozk">
+                                <rect key="frame" x="0.0" y="368" width="320" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="set_alarm_start.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alarmClick:" destination="vgm-0b-nQn" eventType="touchUpInside" id="Lmc-mr-p4R"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ALARM TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EVR-xm-Ymf">
+                                <rect key="frame" x="98" y="310" width="124" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
-                    <navigationItem key="navigationItem" title="鬧鐘" id="ebH-Nt-sp6"/>
+                    <navigationItem key="navigationItem" id="ebH-Nt-sp6"/>
+                    <connections>
+                        <outlet property="alarm" destination="sTy-kS-esP" id="hwR-Dy-M6O"/>
+                        <outlet property="alarm_alarm" destination="dOx-qU-AHr" id="hZ6-1Z-32C"/>
+                        <outlet property="alarm_hr" destination="w1v-80-JgS" id="NDN-HU-rI1"/>
+                        <outlet property="alarm_min" destination="eNg-q6-McL" id="C5C-wq-G6B"/>
+                        <outlet property="alarm_sec" destination="ETd-fp-Rvj" id="4AB-I6-fCc"/>
+                        <outlet property="label_alarm_time" destination="WMy-Ai-52V" id="gzn-xV-Kcv"/>
+                        <outlet property="mask" destination="Odp-iT-RC7" id="Cwc-Kj-Zls"/>
+                        <outlet property="set" destination="PQW-SR-bdP" id="SGd-m2-jwY"/>
+                        <outlet property="setalarm" destination="K6p-Aa-Ozk" id="1aD-YJ-rWJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7c-uf-C0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="S7P-WY-uUK">
+                    <connections>
+                        <action selector="alarm_pan:" destination="vgm-0b-nQn" id="bUg-tg-IpJ"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="525" y="-901"/>
+            <point key="canvasLocation" x="525" y="-899"/>
         </scene>
         <!--View Controller - Item 2-->
         <scene sceneID="xFk-EL-5lj">
             <objects>
                 <viewController id="bw3-ZC-B0t" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Fx-Mu-wb6">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -484,7 +562,7 @@
             <objects>
                 <viewController autoresizesArchivedViewToFullSize="NO" id="A3M-9f-7If" customClass="RecordViewController123" sceneMemberID="viewController">
                     <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Ljq-CR-1Fd" customClass="RecordScrollView">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </scrollView>
@@ -522,7 +600,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="HTb-k3-vNr" customClass="BadgeViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Aaq-OO-MRC">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewLayout key="collectionViewLayout" id="coh-j2-Kfx" customClass="CustomViewLayout"/>
                         <cells>
@@ -555,11 +633,11 @@
             <objects>
                 <viewController id="Ivh-VB-WTA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Uk-A0-MLI">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="0he-OG-8ix">
-                                <rect key="frame" x="53" y="20" width="215" height="188"/>
+                                <rect key="frame" x="53" y="20" width="215" height="144"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RGX-bq-Wj4">
@@ -603,11 +681,11 @@
             <objects>
                 <viewController id="HSb-Ed-2QG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="99S-Lv-vxH">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="2Bi-Kt-YnN">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -630,7 +708,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="mIV-gT-OeG" customClass="MissionViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="dB4-U8-vj2">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewLayout key="collectionViewLayout" id="TNf-8Z-D68" customClass="CustomViewLayout"/>
                         <cells>
@@ -673,7 +751,7 @@
             <objects>
                 <viewController id="QFA-Ej-aq6" customClass="MIssionConditionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l96-Z1-gAd">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -705,6 +783,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="alarm_hole-02.png" width="504" height="563"/>
         <image name="bg.png" width="320" height="460"/>
         <image name="brainhole-06.png" width="55" height="13"/>
         <image name="brainhole1.png" width="30" height="28"/>
@@ -723,8 +802,31 @@
         <image name="room_day.png" width="287" height="422"/>
         <image name="room_myroom.png" width="248" height="198"/>
         <image name="room_setting.png" width="73" height="76"/>
+        <image name="set_alarm_alarm.png" width="18" height="130"/>
+        <image name="set_alarm_bg1.png" width="639" height="780"/>
+        <image name="set_alarm_hr.png" width="28" height="122"/>
+        <image name="set_alarm_min.png" width="30" height="160"/>
+        <image name="set_alarm_sec.png" width="40" height="185"/>
+        <image name="set_alarm_set.png" width="85" height="125"/>
+        <image name="set_alarm_start.png" width="640" height="92"/>
     </resources>
     <classes>
+        <class className="AlarmViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlarmViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="alarmClick:" candidateClass="UIButton"/>
+                <relationship kind="action" name="alarm_pan:" candidateClass="UIPanGestureRecognizer"/>
+                <relationship kind="outlet" name="alarm" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="alarm_alarm" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="alarm_hr" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="alarm_min" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="alarm_sec" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="label_alarm_time" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mask" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="set" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="setalarm" candidateClass="UIButton"/>
+            </relationships>
+        </class>
         <class className="BadgeViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BadgeViewController.h"/>
         </class>
@@ -791,6 +893,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5W9-Zf-SbJ"/>
+        <segue reference="TfL-kD-nbu"/>
     </inferredMetricsTieBreakers>
 </document>

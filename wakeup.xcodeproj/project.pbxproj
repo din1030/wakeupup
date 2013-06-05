@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BB4B7B5175E62E60037CBB8 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB4B7B4175E62E60037CBB8 /* AlarmViewController.m */; };
+		8BB4B7B7175E765B0037CBB8 /* set_alarm_bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB4B7B6175E765B0037CBB8 /* set_alarm_bg1.png */; };
 		A639E4E817560C2D005044EA /* sample_linechart_data.json in Resources */ = {isa = PBXBuildFile; fileRef = A639E4E717560C2D005044EA /* sample_linechart_data.json */; };
 		A639E4EE175636D7005044EA /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A639E4ED175636D7005044EA /* FacebookSDKResources.bundle */; };
 		A639E4F0175636F3005044EA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A639E4EF175636F3005044EA /* FacebookSDK.framework */; };
@@ -89,6 +91,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8BB4B7B3175E62E60037CBB8 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		8BB4B7B4175E62E60037CBB8 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		8BB4B7B6175E765B0037CBB8 /* set_alarm_bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = set_alarm_bg1.png; sourceTree = "<group>"; };
 		A639E4E717560C2D005044EA /* sample_linechart_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_linechart_data.json; sourceTree = "<group>"; };
 		A639E4ED175636D7005044EA /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		A639E4EF175636F3005044EA /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -321,6 +326,8 @@
 				A639E51F17566EEA005044EA /* BrainHoleViewController.h */,
 				A639E52017566EEA005044EA /* BrainHoleViewController.m */,
 				A65238C3173A4DEA0030BDC7 /* Supporting Files */,
+				8BB4B7B3175E62E60037CBB8 /* AlarmViewController.h */,
+				8BB4B7B4175E62E60037CBB8 /* AlarmViewController.m */,
 			);
 			path = wakeup;
 			sourceTree = "<group>";
@@ -346,6 +353,7 @@
 				A6AAFEE3175B5DCC00B07CD7 /* alarm_hole-02.png */,
 				A6AAFEE4175B5DCC00B07CD7 /* back.png */,
 				A6AAFEE5175B5DCC00B07CD7 /* change_alarm_L.png */,
+				8BB4B7B6175E765B0037CBB8 /* set_alarm_bg1.png */,
 				A6AAFEE6175B5DCC00B07CD7 /* change_alarm_R.png */,
 				A6AAFEE7175B5DCC00B07CD7 /* set_alarm_alarm.png */,
 				A6AAFEE8175B5DCC00B07CD7 /* set_alarm_bar.png */,
@@ -521,6 +529,7 @@
 				A6AAFEF9175B5DCC00B07CD7 /* set_alarm_sec.png in Resources */,
 				A6AAFEFA175B5DCC00B07CD7 /* set_alarm_set.png in Resources */,
 				A6AAFEFB175B5DCC00B07CD7 /* set_alarm_start.png in Resources */,
+				8BB4B7B7175E765B0037CBB8 /* set_alarm_bg1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +555,7 @@
 				A6CBB9C3175A7D5E007CD419 /* CustomViewLayout.m in Sources */,
 				A680C8A5175C695B001EDDBD /* BadgeViewController.m in Sources */,
 				A680C8A8175C6A1C001EDDBD /* BadgeListViewController.m in Sources */,
+				8BB4B7B5175E62E60037CBB8 /* AlarmViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
