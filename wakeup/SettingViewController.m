@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SettingViewController.h"
+#import "BrainHoleViewController.h"
 
 @interface SettingViewController ()
 
@@ -151,6 +152,7 @@
         // and show the login UX if necessary.
         [appDelegate openSessionWithAllowLoginUI:YES];
     }
+    
 }
 
 

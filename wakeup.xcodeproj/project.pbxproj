@@ -10,6 +10,22 @@
 		8B564E36175F165400A1E91B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B564E34175F165400A1E91B /* MainStoryboard.storyboard */; };
 		8BB4B7B5175E62E60037CBB8 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB4B7B4175E62E60037CBB8 /* AlarmViewController.m */; };
 		8BB4B7B7175E765B0037CBB8 /* set_alarm_bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB4B7B6175E765B0037CBB8 /* set_alarm_bg1.png */; };
+		A6231299175F19EC004685D1 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A623128A175F19EC004685D1 /* back.png */; };
+		A623129A175F19EC004685D1 /* clender_bg_c.png in Resources */ = {isa = PBXBuildFile; fileRef = A623128B175F19EC004685D1 /* clender_bg_c.png */; };
+		A623129B175F19EC004685D1 /* clender_bg_s.png in Resources */ = {isa = PBXBuildFile; fileRef = A623128C175F19EC004685D1 /* clender_bg_s.png */; };
+		A623129C175F19EC004685D1 /* clender_tab_sleep0.png in Resources */ = {isa = PBXBuildFile; fileRef = A623128D175F19EC004685D1 /* clender_tab_sleep0.png */; };
+		A623129D175F19EC004685D1 /* clender_tab_sleep1.png in Resources */ = {isa = PBXBuildFile; fileRef = A623128E175F19EC004685D1 /* clender_tab_sleep1.png */; };
+		A623129E175F19EC004685D1 /* clender_tab_wake0.png in Resources */ = {isa = PBXBuildFile; fileRef = A623128F175F19EC004685D1 /* clender_tab_wake0.png */; };
+		A623129F175F19EC004685D1 /* clender_tab_wake1.png in Resources */ = {isa = PBXBuildFile; fileRef = A6231290175F19EC004685D1 /* clender_tab_wake1.png */; };
+		A62312A0175F19EC004685D1 /* clender示意圖-1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A6231291175F19EC004685D1 /* clender示意圖-1-1.png */; };
+		A62312A1175F19EC004685D1 /* clender示意圖-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A6231292175F19EC004685D1 /* clender示意圖-1.png */; };
+		A62312A2175F19EC004685D1 /* clender示意圖-2.png in Resources */ = {isa = PBXBuildFile; fileRef = A6231293175F19EC004685D1 /* clender示意圖-2.png */; };
+		A62312A3175F19EC004685D1 /* month_l.png in Resources */ = {isa = PBXBuildFile; fileRef = A6231294175F19EC004685D1 /* month_l.png */; };
+		A62312A4175F19EC004685D1 /* month_l2.png in Resources */ = {isa = PBXBuildFile; fileRef = A6231295175F19EC004685D1 /* month_l2.png */; };
+		A62312A5175F19EC004685D1 /* month_r.png in Resources */ = {isa = PBXBuildFile; fileRef = A6231296175F19EC004685D1 /* month_r.png */; };
+		A62312A6175F19EC004685D1 /* month_r2.png in Resources */ = {isa = PBXBuildFile; fileRef = A6231297175F19EC004685D1 /* month_r2.png */; };
+		A62312A7175F19EC004685D1 /* statistics.png in Resources */ = {isa = PBXBuildFile; fileRef = A6231298175F19EC004685D1 /* statistics.png */; };
+		A62312AA175F1A9B004685D1 /* CalendarCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62312A9175F1A9B004685D1 /* CalendarCollectionViewController.m */; };
 		A639E4E817560C2D005044EA /* sample_linechart_data.json in Resources */ = {isa = PBXBuildFile; fileRef = A639E4E717560C2D005044EA /* sample_linechart_data.json */; };
 		A639E4EE175636D7005044EA /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A639E4ED175636D7005044EA /* FacebookSDKResources.bundle */; };
 		A639E4F0175636F3005044EA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A639E4EF175636F3005044EA /* FacebookSDK.framework */; };
@@ -61,7 +77,6 @@
 		A69BC310174BA1A3006AE7FE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69BC2FE174BA135006AE7FE /* StoreKit.framework */; };
 		A69BC311174BA1A3006AE7FE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69BC2FF174BA135006AE7FE /* SystemConfiguration.framework */; };
 		A6AAFEF0175B5DCC00B07CD7 /* alarm_hole-02.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AAFEE3175B5DCC00B07CD7 /* alarm_hole-02.png */; };
-		A6AAFEF1175B5DCC00B07CD7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AAFEE4175B5DCC00B07CD7 /* back.png */; };
 		A6AAFEF2175B5DCC00B07CD7 /* change_alarm_L.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AAFEE5175B5DCC00B07CD7 /* change_alarm_L.png */; };
 		A6AAFEF3175B5DCC00B07CD7 /* change_alarm_R.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AAFEE6175B5DCC00B07CD7 /* change_alarm_R.png */; };
 		A6AAFEF4175B5DCC00B07CD7 /* set_alarm_alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AAFEE7175B5DCC00B07CD7 /* set_alarm_alarm.png */; };
@@ -95,6 +110,23 @@
 		8BB4B7B3175E62E60037CBB8 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
 		8BB4B7B4175E62E60037CBB8 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
 		8BB4B7B6175E765B0037CBB8 /* set_alarm_bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = set_alarm_bg1.png; sourceTree = "<group>"; };
+		A623128A175F19EC004685D1 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		A623128B175F19EC004685D1 /* clender_bg_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clender_bg_c.png; sourceTree = "<group>"; };
+		A623128C175F19EC004685D1 /* clender_bg_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clender_bg_s.png; sourceTree = "<group>"; };
+		A623128D175F19EC004685D1 /* clender_tab_sleep0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clender_tab_sleep0.png; sourceTree = "<group>"; };
+		A623128E175F19EC004685D1 /* clender_tab_sleep1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clender_tab_sleep1.png; sourceTree = "<group>"; };
+		A623128F175F19EC004685D1 /* clender_tab_wake0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clender_tab_wake0.png; sourceTree = "<group>"; };
+		A6231290175F19EC004685D1 /* clender_tab_wake1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clender_tab_wake1.png; sourceTree = "<group>"; };
+		A6231291175F19EC004685D1 /* clender示意圖-1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clender示意圖-1-1.png"; sourceTree = "<group>"; };
+		A6231292175F19EC004685D1 /* clender示意圖-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clender示意圖-1.png"; sourceTree = "<group>"; };
+		A6231293175F19EC004685D1 /* clender示意圖-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clender示意圖-2.png"; sourceTree = "<group>"; };
+		A6231294175F19EC004685D1 /* month_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = month_l.png; sourceTree = "<group>"; };
+		A6231295175F19EC004685D1 /* month_l2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = month_l2.png; sourceTree = "<group>"; };
+		A6231296175F19EC004685D1 /* month_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = month_r.png; sourceTree = "<group>"; };
+		A6231297175F19EC004685D1 /* month_r2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = month_r2.png; sourceTree = "<group>"; };
+		A6231298175F19EC004685D1 /* statistics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statistics.png; sourceTree = "<group>"; };
+		A62312A8175F1A9B004685D1 /* CalendarCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarCollectionViewController.h; sourceTree = "<group>"; };
+		A62312A9175F1A9B004685D1 /* CalendarCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarCollectionViewController.m; sourceTree = "<group>"; };
 		A639E4E717560C2D005044EA /* sample_linechart_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_linechart_data.json; sourceTree = "<group>"; };
 		A639E4ED175636D7005044EA /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		A639E4EF175636F3005044EA /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -160,7 +192,6 @@
 		A69BC2FE174BA135006AE7FE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		A69BC2FF174BA135006AE7FE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A6AAFEE3175B5DCC00B07CD7 /* alarm_hole-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm_hole-02.png"; sourceTree = "<group>"; };
-		A6AAFEE4175B5DCC00B07CD7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		A6AAFEE5175B5DCC00B07CD7 /* change_alarm_L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = change_alarm_L.png; sourceTree = "<group>"; };
 		A6AAFEE6175B5DCC00B07CD7 /* change_alarm_R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = change_alarm_R.png; sourceTree = "<group>"; };
 		A6AAFEE7175B5DCC00B07CD7 /* set_alarm_alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = set_alarm_alarm.png; sourceTree = "<group>"; };
@@ -230,11 +261,44 @@
 			name = src;
 			sourceTree = "<group>";
 		};
+		A6231288175F185F004685D1 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				8BB4B7B3175E62E60037CBB8 /* AlarmViewController.h */,
+				8BB4B7B4175E62E60037CBB8 /* AlarmViewController.m */,
+			);
+			name = Alarm;
+			sourceTree = "<group>";
+		};
+		A6231289175F19EC004685D1 /* story_clender */ = {
+			isa = PBXGroup;
+			children = (
+				A623128A175F19EC004685D1 /* back.png */,
+				A623128B175F19EC004685D1 /* clender_bg_c.png */,
+				A623128C175F19EC004685D1 /* clender_bg_s.png */,
+				A623128D175F19EC004685D1 /* clender_tab_sleep0.png */,
+				A623128E175F19EC004685D1 /* clender_tab_sleep1.png */,
+				A623128F175F19EC004685D1 /* clender_tab_wake0.png */,
+				A6231290175F19EC004685D1 /* clender_tab_wake1.png */,
+				A6231291175F19EC004685D1 /* clender示意圖-1-1.png */,
+				A6231292175F19EC004685D1 /* clender示意圖-1.png */,
+				A6231293175F19EC004685D1 /* clender示意圖-2.png */,
+				A6231294175F19EC004685D1 /* month_l.png */,
+				A6231295175F19EC004685D1 /* month_l2.png */,
+				A6231296175F19EC004685D1 /* month_r.png */,
+				A6231297175F19EC004685D1 /* month_r2.png */,
+				A6231298175F19EC004685D1 /* statistics.png */,
+			);
+			path = story_clender;
+			sourceTree = "<group>";
+		};
 		A639E4E917560C4E005044EA /* Mission */ = {
 			isa = PBXGroup;
 			children = (
 				A6C55D5B175537E2008F3314 /* MissionViewController.h */,
 				A6C55D5C175537E2008F3314 /* MissionViewController.m */,
+				A62312A8175F1A9B004685D1 /* CalendarCollectionViewController.h */,
+				A62312A9175F1A9B004685D1 /* CalendarCollectionViewController.m */,
 				A679B2A0175497C800A01CB0 /* MissionCollectionCell.h */,
 				A679B2A1175497C800A01CB0 /* MissionCollectionCell.m */,
 				A679B29D175486FA00A01CB0 /* MIssionConditionViewController.h */,
@@ -313,8 +377,9 @@
 		A65238C2173A4DEA0030BDC7 /* wakeup */ = {
 			isa = PBXGroup;
 			children = (
-				A639E4E917560C4E005044EA /* Mission */,
+				A6231288175F185F004685D1 /* Alarm */,
 				A6CBB9C4175A832F007CD419 /* Badge */,
+				A639E4E917560C4E005044EA /* Mission */,
 				A6B2797F17526B7900895ACC /* Statistics */,
 				A65238CB173A4DEA0030BDC7 /* AppDelegate.h */,
 				A65238CC173A4DEA0030BDC7 /* AppDelegate.m */,
@@ -326,8 +391,6 @@
 				A639E51F17566EEA005044EA /* BrainHoleViewController.h */,
 				A639E52017566EEA005044EA /* BrainHoleViewController.m */,
 				A65238C3173A4DEA0030BDC7 /* Supporting Files */,
-				8BB4B7B3175E62E60037CBB8 /* AlarmViewController.h */,
-				8BB4B7B4175E62E60037CBB8 /* AlarmViewController.m */,
 			);
 			path = wakeup;
 			sourceTree = "<group>";
@@ -351,7 +414,6 @@
 			isa = PBXGroup;
 			children = (
 				A6AAFEE3175B5DCC00B07CD7 /* alarm_hole-02.png */,
-				A6AAFEE4175B5DCC00B07CD7 /* back.png */,
 				A6AAFEE5175B5DCC00B07CD7 /* change_alarm_L.png */,
 				8BB4B7B6175E765B0037CBB8 /* set_alarm_bg1.png */,
 				A6AAFEE6175B5DCC00B07CD7 /* change_alarm_R.png */,
@@ -370,6 +432,7 @@
 		A6B2796117524ABA00895ACC /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				A6231289175F19EC004685D1 /* story_clender */,
 				A6AAFEE2175B5DCC00B07CD7 /* story_set alarm */,
 				A639E50417566D29005044EA /* brain_hole */,
 				A639E502175640B0005044EA /* f_logo.png */,
@@ -517,7 +580,6 @@
 				A6DBC912175A166000393671 /* eye-r.png in Resources */,
 				A6DBC913175A166000393671 /* eyewh-r.png in Resources */,
 				A6AAFEF0175B5DCC00B07CD7 /* alarm_hole-02.png in Resources */,
-				A6AAFEF1175B5DCC00B07CD7 /* back.png in Resources */,
 				A6AAFEF2175B5DCC00B07CD7 /* change_alarm_L.png in Resources */,
 				A6AAFEF3175B5DCC00B07CD7 /* change_alarm_R.png in Resources */,
 				A6AAFEF4175B5DCC00B07CD7 /* set_alarm_alarm.png in Resources */,
@@ -530,6 +592,21 @@
 				A6AAFEFB175B5DCC00B07CD7 /* set_alarm_start.png in Resources */,
 				8BB4B7B7175E765B0037CBB8 /* set_alarm_bg1.png in Resources */,
 				8B564E36175F165400A1E91B /* MainStoryboard.storyboard in Resources */,
+				A6231299175F19EC004685D1 /* back.png in Resources */,
+				A623129A175F19EC004685D1 /* clender_bg_c.png in Resources */,
+				A623129B175F19EC004685D1 /* clender_bg_s.png in Resources */,
+				A623129C175F19EC004685D1 /* clender_tab_sleep0.png in Resources */,
+				A623129D175F19EC004685D1 /* clender_tab_sleep1.png in Resources */,
+				A623129E175F19EC004685D1 /* clender_tab_wake0.png in Resources */,
+				A623129F175F19EC004685D1 /* clender_tab_wake1.png in Resources */,
+				A62312A0175F19EC004685D1 /* clender示意圖-1-1.png in Resources */,
+				A62312A1175F19EC004685D1 /* clender示意圖-1.png in Resources */,
+				A62312A2175F19EC004685D1 /* clender示意圖-2.png in Resources */,
+				A62312A3175F19EC004685D1 /* month_l.png in Resources */,
+				A62312A4175F19EC004685D1 /* month_l2.png in Resources */,
+				A62312A5175F19EC004685D1 /* month_r.png in Resources */,
+				A62312A6175F19EC004685D1 /* month_r2.png in Resources */,
+				A62312A7175F19EC004685D1 /* statistics.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +633,7 @@
 				A680C8A5175C695B001EDDBD /* BadgeViewController.m in Sources */,
 				A680C8A8175C6A1C001EDDBD /* BadgeListViewController.m in Sources */,
 				8BB4B7B5175E62E60037CBB8 /* AlarmViewController.m in Sources */,
+				A62312AA175F1A9B004685D1 /* CalendarCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
