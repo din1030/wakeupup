@@ -8,7 +8,6 @@
 
 #import "AlarmViewController.h"
 #import <QuartzCore/QuartzCore.h>
-#import "BrainHoleViewController.h"
 
 @interface AlarmViewController ()
 
@@ -85,9 +84,6 @@
         {
             NSLog(@"time up. Please play this game.");
             // 切換到腦袋有洞
-            [timer invalidate];
-            BrainHoleViewController * bh_viewcontroller = [self.storyboard instantiateViewControllerWithIdentifier:@"GamePage"];
-            [self presentViewController:bh_viewcontroller animated:YES completion:nil];
         }
     }
 }
@@ -143,6 +139,4 @@ CGFloat DegreesToRadians(CGFloat degrees)
     // 背景執行Code
     //    [[UIApplication sharedApplication] endBackgroundTask:counterTask];
 }
-
-
 @end
